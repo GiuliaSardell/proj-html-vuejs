@@ -50,23 +50,33 @@ h1{
 }
 button{
   background-color: $primary-color;
-  border-color: $primary-color;
+  border: none;
+  // border-color: $primary-color;
   padding: 15px 25px;
   color: white;
   text-transform: uppercase !important;
   width: 200px;
   margin: 30px auto !important;
   margin-bottom: 120px !important;
+  &:hover{
+    background-color: darken($primary-color, 30%);
+    transition: all 0.3s;
+  }
 }
 .icon{
   text-align: center;
   padding: 30px;
 
   i{
+    cursor: pointer;
     color: white;
-    margin: 0 5px;
+    margin: 0 10px;
     font-size: 20px;
     filter: opacity(.5); 
+    &:hover{
+      filter: none;
+      transition: all 0.3s;
+    }
     // padding-top: 120px;
   }
 } 

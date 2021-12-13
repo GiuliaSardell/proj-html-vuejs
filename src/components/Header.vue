@@ -67,6 +67,8 @@ header{
       @include center (justify);
       padding-top: 30px;
       i{
+        cursor: pointer;
+        filter: opacity(1); 
         font-size: 20px;
         margin: 0 20px;
         color: white;
@@ -74,6 +76,7 @@ header{
           transform: rotate(90deg);
         }
          &:hover, &:active{
+          transition: all 0.3s;
           color: $primary-color;
         }
       }
@@ -96,6 +99,7 @@ header{
               font-size: 18px;
 
               &:hover{
+                transition: all 0.3s;
                 color: $primary-color;
               }
             }
