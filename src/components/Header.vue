@@ -21,11 +21,18 @@
       </div>
     </div>
     
+    <Jumbotron />
+
   </header>
 </template>
 
 <script>
+
+//IMPORT COMPONENTS
+import Jumbotron from './Jumbotron.vue';
+
 export default {
+  components: { Jumbotron },
   name: 'Header',
   data(){
     return{
@@ -47,6 +54,7 @@ export default {
 //IMPORT STYLE
 @import '../assets/style/vars.scss';
 @import '../assets/style/mixins.scss';
+
 
 header{
   background: rgba(0, 0, 0, .3) url(../assets/img/course-9-f-img.jpg);  
