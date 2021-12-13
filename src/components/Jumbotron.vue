@@ -39,7 +39,7 @@ h1{
   font-size: 60px !important;
   color: white;
   text-align: center;
-  margin-top: 150px !important;
+  margin-top: 120px !important;
 }
 .subtitle{
   font-size: 18px;

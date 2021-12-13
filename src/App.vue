@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <Header />
+    <Subject />
     <Main />
     <Footer />
 
@@ -10,6 +11,7 @@
 <script>
 
 import Header from './components/Header.vue';
+import Subject from './components/Subject.vue';
 import Main from './components/Main.vue';
 import Footer from './components/Footer.vue';
 
@@ -20,7 +22,8 @@ export default {
   components: {
     Header,
     Main,
-    Footer
+    Footer,
+    Subject
 
   }
 }
@@ -34,9 +37,7 @@ export default {
 @import './assets/style/vars.scss';
 
 
-// body{
-//   font-family: $title-font;
-// }
+
 
 
 </style>
