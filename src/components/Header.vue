@@ -61,7 +61,6 @@ header{
   background-blend-mode: darken;
   background-position: bottom;
   @include background-cover;
-  // height: 800px;
 
     .container{
       @include center (justify);

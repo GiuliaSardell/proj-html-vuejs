@@ -2,15 +2,18 @@
   <div class="container">
     
     <h2>The Trusted Name for In-Home Tutoring.</h2>
-    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt quo impedit excepturi inventore id exercitationem voluptates omnis, consectetur dicta fuga. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, sed. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, voluptatibus?</span>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt quo impedit excepturi inventore id exercitationem voluptates omnis, consectetur dicta fuga. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, sed. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, voluptatibus?</p>
     <a class="link-blue" href="#">Learn more</a>
 
 
     <img src="../assets/img/h5-img-1.jpg" alt="img">
 
     <div class="top">
-      <i class="fas fa-chevron-up"></i>
-      <span>TOP</span>
+      <a href="#">
+        <i class="fas fa-chevron-up"></i>
+        <span>TOP</span>
+      </a>
+      
     </div>
 
     
@@ -28,8 +31,6 @@ export default {
 @import '../assets/style/mixins.scss';
 
 .container{
-  // @include center;
-  // flex-direction: column;
   position: relative;
   
   h2{
@@ -37,6 +38,10 @@ export default {
     font-family: $title-font;
     font-weight: bold !important;
     margin-bottom: 20px !important;
+  }
+  p{
+    font-size: 18px;
+    color: grey;
   }
   .link-blue{
     margin: 25px 0;
@@ -69,6 +74,18 @@ export default {
     &:hover{
       color: darken($primary-color, 20% )!important;
     }
+
+    a{
+      text-decoration: none;
+      text-align: center;
+      color:white;
+      &:hover{
+      color: darken($primary-color, 20% )!important;
+      transition: all 0.3s;
+    }
+    }
+
+   
   }
 }
 

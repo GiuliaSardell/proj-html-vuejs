@@ -1,21 +1,24 @@
 <template>
   <main>
     <Subject />
-    <Section />
+    <SectionRow />
+    <SectionColumn />
   </main>
 </template>
 
 <script>
 
 import Subject from './Subject.vue';
-import Section from './Section.vue';
+import SectionRow from './SectionRow.vue';
+import SectionColumn from './SectionColumn.vue';
 
 
 export default {
   name: 'Main',
   components:{ 
     Subject,
-    Section
+    SectionRow,
+    SectionColumn,
   }
 }
 </script>
