@@ -1,11 +1,44 @@
 <template>
   <header>
-    HEADER
+    <div class="container">
+
+      <a href="#">
+        <img src="../assets/img/logo-light.png" alt="logo">
+      </a>
+
+      <nav>
+        <ul>
+          <li v-for="(item,index) in links" :key="index">
+            <a href="#">{{item}}</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="icon">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-shopping-bag"></i>
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+    
   </header>
 </template>
 
 <script>
 export default {
+  name: 'Header',
+  data(){
+    return{
+      links:[
+        'Home', 
+        'Courses',
+        'Instructors',
+        'Events',
+        'Pages',
+        'Elements'
+      ]
+    }
+  }
 
 }
 </script>
@@ -13,5 +46,61 @@ export default {
 <style lang="scss">
 //IMPORT STYLE
 @import '../assets/style/vars.scss';
+@import '../assets/style/mixins.scss';
+
+header{
+  background: rgba(0, 0, 0, .3) url(../assets/img/course-9-f-img.jpg);  
+  background-blend-mode: darken;
+  @include background-cover;
+  height: 800px;
+
+    .container{
+      @include center (justify);
+      padding: 10px;
+      i{
+        font-size: 20px;
+        margin: 0 20px;
+        color: white;
+         &:first-child {
+          transform: rotate(90deg);
+        }
+         &:hover, &:active{
+          color: $primary-color;
+        }
+
+      }
+      img{
+          // padding: 10px;
+          width: 250px;
+        }
+
+        ul{ 
+          display: flex;
+          margin: 0;
+
+          li{
+            text-transform: uppercase;
+            list-style: none;
+            margin: 0 20px ;
+
+            a{
+              text-decoration: none;
+              color: white;
+              font-size: 18px;
+
+              &:hover{
+                color: $primary-color;
+              }
+            }
+          }
+        }
+
+    }
+
+
+ 
+  
+
+}
 
 </style>
