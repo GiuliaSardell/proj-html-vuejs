@@ -59,12 +59,13 @@ export default {
 header{
   background: rgba(0, 0, 0, .3) url(../assets/img/course-9-f-img.jpg);  
   background-blend-mode: darken;
+  background-position: bottom;
   @include background-cover;
-  height: 800px;
+  // height: 800px;
 
     .container{
       @include center (justify);
-      padding: 10px;
+      padding-top: 30px;
       i{
         font-size: 20px;
         margin: 0 20px;
@@ -75,10 +76,8 @@ header{
          &:hover, &:active{
           color: $primary-color;
         }
-
       }
       img{
-          // padding: 10px;
           width: 250px;
         }
 
