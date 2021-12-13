@@ -1,12 +1,22 @@
 <template>
   <main>
-    MAIN
+    <Subject />
+    <Section />
   </main>
 </template>
 
 <script>
-export default {
 
+import Subject from './Subject.vue';
+import Section from './Section.vue';
+
+
+export default {
+  name: 'Main',
+  components:{ 
+    Subject,
+    Section
+  }
 }
 </script>
 

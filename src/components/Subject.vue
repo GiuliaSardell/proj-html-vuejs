@@ -20,6 +20,7 @@
 
 <script>
 export default {
+  name: 'Subject',
 data(){
   return{
     subjects:[
@@ -69,6 +70,7 @@ data(){
     margin-bottom: 20px !important;
     display: block;
   }
+  cursor: pointer;
   padding: 50px 0;
   text-align: center;
   margin: 20px;
