@@ -1,28 +1,52 @@
 <template>
-  <div class="container">
-    
-    <h2>The Trusted Name for In-Home Tutoring.</h2>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt quo impedit excepturi inventore id exercitationem voluptates omnis, consectetur dicta fuga. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, sed. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, voluptatibus?</p>
-    <a class="link-blue" href="#">Learn more</a>
 
+  <div class="section">
+    <div class="container container-row">
 
-    <img src="../assets/img/h5-img-1.jpg" alt="img">
+      
 
-    <div class="top">
-      <a href="#">
-        <i class="fas fa-chevron-up"></i>
-        <span>TOP</span>
-      </a>
+        <div class="left-flex">
+          <img src="../assets/img/h1-img-8.jpg" alt="">
+        </div>
+
+        <div class="right-flex">
+          <h2>
+            Empowering Children to Reach Their Potential.
+          </h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat quasi tempore ut reiciendis reprehenderit ea odit quibusdam dicta eaque iusto adipisci a atque eligendi aut cupiditate iure, excepturi possimus ad?</p>
+
+          <div class="container-number">
+            <div>
+              <span class="number">168</span>
+              <span>User Stories</span>
+            </div>
+            <div>
+              <span class="number">347</span>
+              <span>Events</span>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="top top-sectionRow">
+          <a href="#">
+            <i class="fas fa-chevron-up"></i>
+            <span>TOP</span>
+          </a>
+        </div>
+        
+
+      
+      
+      
       
     </div>
-
-    
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Section'
+name: 'SectionColumn'
 }
 </script>
 
@@ -30,63 +54,51 @@ export default {
 @import '../assets/style/vars.scss';
 @import '../assets/style/mixins.scss';
 
-.container{
+
+.section{
   position: relative;
-  
-  h2{
-    width: 400px;
-    font-family: $title-font;
-    font-weight: bold !important;
-    margin-bottom: 20px !important;
-  }
-  p{
-    font-size: 18px;
-    color: grey;
-  }
-  .link-blue{
-    margin: 25px 0;
-    display: block;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-decoration: none !important;
-    color: $primary-color !important;
-    &:hover{
-      color: darken($primary-color, 20% )!important;
-    }
-  }
-
-  .top{
-    i{
-      display: block;
-      font-size: 30px;
-    }
-    @include center (both);
-    flex-direction: column;
-    cursor: pointer;
-    color: white;
-    font-size: 20px;
-    width: 80px;
-    height: 80px;
-    background-color: $primary-color;
-    position: absolute;
-    right: 0;
-    top: 70%;
-    &:hover{
-      color: darken($primary-color, 20% )!important;
-    }
-
-    a{
-      text-decoration: none;
-      text-align: center;
-      color:white;
-      &:hover{
-      color: darken($primary-color, 20% )!important;
-      transition: all 0.3s;
-    }
-    }
-
-   
-  }
 }
+.container-row{
+  @include center;
+  margin: 80px 0 40px 0;
+  
+  .left-flex{
+    width: 500px ;
+    margin-top: 30px !important;
+    img{
+      width: 100%;
+    }
+  }
+
+  .right-flex{
+    margin-left: 80px;
+    width: 450px;
+  
+  }
+  .container-number{
+    display: flex;
+    font-family: $title-font;
+    color: $primary-color;
+    div{
+      width: 50%;
+      padding: 40px 0;
+    }
+    .number{
+      margin: 10px 0;
+      font-size: 50px;
+      display: block;
+    }
+  }
+
+  .top-sectionRow{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+
+}
+
+
 
 </style>

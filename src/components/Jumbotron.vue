@@ -13,7 +13,7 @@
     <div class="icon">
       <i class="fas fa-circle"></i>
       <i class="fas fa-circle"></i>
-      <i class="far fa-dot-circle"></i>
+      <i class="far fa-dot-circle active"></i>
     </div>
 
   </div>
@@ -51,7 +51,6 @@ h1{
 button{
   background-color: $primary-color;
   border: none;
-  // border-color: $primary-color;
   padding: 15px 25px;
   color: white;
   text-transform: uppercase !important;
@@ -67,11 +66,15 @@ button{
   text-align: center;
   padding: 30px;
 
+  .active{
+    filter: none;
+  }
+
   i{
     cursor: pointer;
     color: white;
     margin: 0 10px;
-    font-size: 20px;
+    font-size: 30px;
     filter: opacity(.5); 
     &:hover{
       filter: none;

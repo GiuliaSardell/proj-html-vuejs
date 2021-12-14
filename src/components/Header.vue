@@ -59,7 +59,6 @@ export default {
 header{
   background: rgba(0, 0, 0, .3) url(../assets/img/course-9-f-img.jpg);  
   background-blend-mode: darken;
-  background-position: bottom;
   @include background-cover;
 
     .container{

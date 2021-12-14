@@ -3,22 +3,26 @@
     <Subject />
     <SectionRow />
     <SectionColumn />
+    <ColorSection />
+    
   </main>
 </template>
 
 <script>
 
 import Subject from './Subject.vue';
-import SectionRow from './SectionRow.vue';
-import SectionColumn from './SectionColumn.vue';
+import SectionRow from './SectionColumn.vue';
+import SectionColumn from './SectionRow.vue';
+import ColorSection from './ColorSection.vue';
 
 
 export default {
   name: 'Main',
   components:{ 
     Subject,
-    SectionRow,
     SectionColumn,
+    SectionRow,
+    ColorSection,
   }
 }
 </script>
