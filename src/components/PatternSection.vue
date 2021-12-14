@@ -34,6 +34,12 @@
 
       </div>
 
+
+      <i class="circle fas fa-circle"></i>
+      <i class="circle fas fa-circle active"></i>
+      <i class="circle fas fa-circle"></i>
+    
+
     </div>
    </div>
 </template>
@@ -150,13 +156,19 @@ export default {
           text-transform: uppercase;
           font-weight: bold;
         }
-
-
       }
+      
+      
+        
+          
 
       
 
     }
+    .circle{
+      color: red;
+    }
+        
   }
 }
 </style>

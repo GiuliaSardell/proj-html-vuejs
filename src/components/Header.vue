@@ -62,7 +62,7 @@ header{
   @include background-cover;
 
     .container{
-      @include center (justify);
+      @include center;
       padding-top: 30px;
       i{
         cursor: pointer;

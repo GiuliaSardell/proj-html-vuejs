@@ -7,11 +7,7 @@
       :alt="subject.title">
       <span>{{subject.title}}</span>
       </div>
-     <!-- <div class="col"></div>
-     <div class="col"></div>
-     <div class="col"></div>
-     <div class="col"></div>
-     <div class="col"></div> -->
+
    </div>
    
  </div>

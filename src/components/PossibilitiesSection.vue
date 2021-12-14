@@ -85,6 +85,7 @@ export default {
   @include center;
   width: 900px !important;
   position: relative;
+  margin-bottom: 80px;
 
   .container-left{
     @include center;
