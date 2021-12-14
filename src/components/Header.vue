@@ -8,8 +8,8 @@
 
       <nav>
         <ul>
-          <li v-for="(item,index) in links" :key="index">
-            <a href="#">{{item}}</a>
+          <li v-for="(link,index) in links" :key="index">
+            <a href="#">{{link}}</a>
           </li>
         </ul>
       </nav>

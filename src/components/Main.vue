@@ -4,6 +4,7 @@
     <SectionRow />
     <SectionColumn />
     <ColorSection />
+    <PossibilitiesSection />
     
   </main>
 </template>
@@ -14,6 +15,7 @@ import Subject from './Subject.vue';
 import SectionRow from './SectionColumn.vue';
 import SectionColumn from './SectionRow.vue';
 import ColorSection from './ColorSection.vue';
+import PossibilitiesSection from './PossibilitiesSection.vue';
 
 
 export default {
@@ -23,6 +25,7 @@ export default {
     SectionColumn,
     SectionRow,
     ColorSection,
+    PossibilitiesSection,
   }
 }
 </script>

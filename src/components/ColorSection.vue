@@ -49,6 +49,7 @@ export default {
   height: 800px;
   width: 100%;
   position: relative;
+  margin-bottom: 120px;
 
   .container-colorSection{
     @include center;
