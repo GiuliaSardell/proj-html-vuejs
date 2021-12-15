@@ -14,7 +14,7 @@
         </ul>
       </nav>
 
-      <div class="icon">
+      <div class="icon d-flex">
         <i class="fas fa-search"></i>
         <i class="fas fa-shopping-bag"></i>
         <i class="fas fa-bars"></i>

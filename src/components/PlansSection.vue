@@ -14,19 +14,50 @@
           >
             <thead
             >
-              <tr>
-                
+              <tr class="title-row"> 
+                <td
+                v-for="(title, i) in titleBox" :key="i">
+             
+
+                  <!-- <img src="../assets/img/h5-custom-icon-7.png" alt="">
+                  <img :src ="title.img" :alt="title.title"> -->
+                  <!-- <img :src="require(`../assets/img/${title.img}`)" alt class="title.title" /> -->
+                  <!-- <img :src="'/img/' + title.img + '.png'" v-bind:alt="title.title" > -->
+                  <!-- <img :src=" require('../assets/img/' + title.img + '.png')" v-bind:alt="title.title" > -->
+                  <!-- <img :src =" require('../assets/img/' + title.img )"  :alt="title.title"> -->
+
+                  <div class="container-title d-flex flex-column justify-content-center align-items-center my-4 ">
+                    <img class="" src="../assets/img/h5-custom-icon-7.png" alt="">
+
+                    <div class="title">
+                      {{title.title}}
+                    </div>
+
+                    <div class="title-cost">
+                      {{title.cost}}
+                    </div>
+
+                  </div>
+                  
+ 
+
+                  
+                  
+                  
+                  
+                </td>
               </tr>
             </thead>
             <tbody
-            v-for="(box, index) in tableBoxes" :key="index">
-              <tr>
+            >
+              <tr v-for="(box, index) in tableBoxes" :key="index">
                 <td>
                 {{box.col1}}
                 </td>
-                <td>{{box.col2}}</td>
-                <td>{{box.col3}}</td>
-                <td>{{box.col4}}</td>
+                <td  style="text-align: center">{{box.col2}}</td>
+                <td  style="text-align: center">{{box.col3}}</td>
+                <td  style="text-align: center">{{box.col4}}</td>
+                
               </tr>
               
             </tbody>
@@ -45,16 +76,33 @@
 <script>
 export default {
   name: 'PlansSection',
+ 
   data(){
     return{
-      tableBoxes:[
 
-        {
-          col1:'Save up to 40% by paying weekly',
-          col2:['img','Number of Courses','$12'],
-          col3: 'col3row3',
-          col4: 'col4row4'
+      titleBox:[
+        { 
+          img: '',
+          title:'Save up to 40% by paying weekly',
+          cost: '_'
         },
+        {
+          img: 'h5-custom-icon-7.png',
+          title:'Standard',
+          cost: '$12'
+        },
+        {
+          img: 'h5-custom-icon-8.png',
+          title:'Professional',
+          cost: '$12'
+        },
+        {
+          img: 'h5-custom-icon-9.png',
+          title:'Advanced',
+          cost: '$12'  
+        }
+      ],
+      tableBoxes:[
         {
           col1:'Number of Courses',
           col2: '2',
@@ -103,6 +151,7 @@ export default {
           col3: '✗',
           col4: '✓',
         },
+  
       ],
      
     }
@@ -115,6 +164,8 @@ export default {
 @import '../assets/style/vars.scss';
 @import '../assets/style/mixins.scss';
 
+.hidden {display: none}
+
 .container-plans{
   .top-plans{
     text-align: center;
@@ -125,6 +176,42 @@ export default {
     }
   }
 
+  .table{
+    thead{
+      font-weight: bold;
+      background-color: #F7FDFF;
+      
+      .title-row{
+        &:first-child{
+          width: 230px;
+        }
+      }
+
+      td{
+        border-left: 1px solid lightgrey;
+        border-right: 1px solid lightgrey;
+        border-top: 4px solid #D4F2FF;
+        cursor: pointer;
+        &:hover, &:active{
+        border-top: 4px solid $primary-color;
+
+        }
+      }
+    }
+    tbody{
+      tr{
+        line-height: 50px;
+        td{
+          border-left: 1px solid lightgrey;
+          border-right: 1px solid lightgrey;
+        }
+        
+        
+      }
+    }
+    font-family: $title-font;
+  }
+  
 }
 
 

@@ -28,6 +28,7 @@ export default {
 section{
   background-image: url(../assets/img/page-background-img.png);
   @include background-cover;
+  background-repeat: repeat;
   background-size: 190%;
   background-position: 75% 0%;
 }
