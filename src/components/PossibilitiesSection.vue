@@ -91,7 +91,8 @@ export default {
     @include center;
     flex-direction: column;
     .left{
-    
+      cursor: pointer;
+      
       @include center (align);
       height: 70px;
       width: 240px;
@@ -102,6 +103,7 @@ export default {
         border-left: 5px solid $primary-color;
         span{
           color: $primary-color;
+          
         }
       }
       

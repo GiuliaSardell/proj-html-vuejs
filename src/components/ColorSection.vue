@@ -89,11 +89,15 @@ export default {
     }
 
     .container-icon{
+      cursor: pointer;
       margin-top: 100px;
       i{
         color: white;
         margin: 10px;
         filter: opacity(.5);
+        &:hover, &:active{
+          filter: none;
+        }
       }
 
       .active{
