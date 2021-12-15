@@ -164,7 +164,10 @@ export default {
 @import '../assets/style/vars.scss';
 @import '../assets/style/mixins.scss';
 
-.hidden {display: none}
+.section-plans{
+  border-bottom: 2px solid lightgrey;
+
+}
 
 .container-plans{
   .top-plans{
@@ -177,6 +180,7 @@ export default {
   }
 
   .table{
+    margin-bottom: 70px;
     thead{
       font-weight: bold;
       background-color: #F7FDFF;

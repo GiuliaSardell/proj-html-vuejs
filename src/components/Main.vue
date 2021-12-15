@@ -6,6 +6,7 @@
     <ColorSection />
     <PossibilitiesSection />
     <PatternContainer />
+    <Sponsor />
     
   </main>
 </template>
@@ -18,6 +19,7 @@ import SectionColumn from './SectionRow.vue';
 import ColorSection from './ColorSection.vue';
 import PossibilitiesSection from './PossibilitiesSection.vue';
 import PatternContainer from './PatternContainer.vue';
+import Sponsor from './Sponsor.vue';
 
 
 export default {
@@ -29,6 +31,7 @@ export default {
     ColorSection,
     PossibilitiesSection,
     PatternContainer,
+    Sponsor,
   }
 }
 </script>
