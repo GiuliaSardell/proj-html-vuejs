@@ -8,7 +8,7 @@
         </a>
       </div>
 
-  <div class="container container-sponsor">
+  <div class="container container-sponsor d-flex justify-content-center align-items-center">
 
 
     <img src="../assets/img/h5-client-5.png" alt="">

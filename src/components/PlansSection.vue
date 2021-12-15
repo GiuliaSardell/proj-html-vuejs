@@ -208,6 +208,8 @@ export default {
         td{
           border-left: 1px solid lightgrey;
           border-right: 1px solid lightgrey;
+          background-color: white;
+
         }
         
         

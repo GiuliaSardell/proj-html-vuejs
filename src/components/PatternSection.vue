@@ -3,7 +3,7 @@
    <div class="section-pattern">
     <div class="container container-pattern">
 
-       <div class="top top-patternSection">
+      <div class="top top-patternSection">
         <a href="#">
           <i class="fas fa-chevron-up"></i>
           <span>TOP</span>
