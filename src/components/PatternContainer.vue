@@ -1,6 +1,7 @@
 <template>
-  <section>
+  <section class="pattern-container">
     <PatternSection />
+    <PlansSection />
   </section>
 
 </template>
@@ -8,11 +9,13 @@
 <script>
 
 import PatternSection from './PatternSection.vue';
+import PlansSection from './PlansSection.vue';
 
 export default {
   name: 'PatternContainer',
   components:{ 
-    PatternSection
+    PatternSection,
+    PlansSection
   }
 }
 </script>

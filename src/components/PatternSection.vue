@@ -3,6 +3,13 @@
    <div class="section-pattern">
     <div class="container container-pattern">
 
+       <div class="top top-patternSection">
+        <a href="#">
+          <i class="fas fa-chevron-up"></i>
+          <span>TOP</span>
+        </a>
+      </div>
+
       <div class="pattern-top flex-column">
         <h2>Popular Online Courses</h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam dolorum ea aliquam voluptate dolores. Possimus reiciendis dolores excepturi laudantium voluptatem?</p>
@@ -34,10 +41,12 @@
 
       </div>
 
-
-      <i class="circle fas fa-circle"></i>
-      <i class="circle fas fa-circle active"></i>
-      <i class="circle fas fa-circle"></i>
+      <div class="circle-pattern">
+        <i class="fas fa-circle"></i>
+        <i class="fas fa-circle"></i>
+        <i class="fas fa-circle"></i>
+      </div>
+      
     
 
     </div>
@@ -88,6 +97,21 @@ export default {
 @import '../assets/style/mixins.scss';
 
 .section-pattern{
+    position: relative;
+    border-top: 2px solid rgb(231, 231, 231);
+    border-bottom: 2px solid rgb(231, 231, 231);
+
+    .container-pattern{
+      margin-top: 150px;
+  
+
+    .top-patternSection{
+      position: absolute;
+      right: 0;
+      top: 30px;
+    }
+  }
+  
 
   .pattern-top{
     @include center;
@@ -122,6 +146,7 @@ export default {
         
       }
       .cost{
+        cursor: pointer;
         text-align: center;
         text-transform: uppercase;
         color: white;
@@ -157,18 +182,23 @@ export default {
           font-weight: bold;
         }
       }
-      
-      
-        
-          
 
-      
-
-    }
-    .circle{
-      color: red;
-    }
+    }  
         
+  }
+  .circle-pattern{
+    text-align: center;
+    margin: 50px 0 150px 0px;
+    i{
+      cursor: pointer;
+      margin: 50px 10px;
+      color: $primary-color;
+      filter: opacity(.6);
+      
+      &:hover, &:active{
+        filter: none;
+      }
+    }
   }
 }
 </style>
